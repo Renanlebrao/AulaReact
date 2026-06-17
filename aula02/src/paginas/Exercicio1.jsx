@@ -1,14 +1,11 @@
-export default function Exercicio1({fahrenheit})
+export default function Exercicio1({numero})
 {
-let celsius= (fahrenheit-32)*5/9
-return (
+    let fahrenheit = numero;
+    let celsius = Number(fahrenheit - 32) * 5 / 9;
 
-<div>
-{fahrenheit} Fahrenheit para {celsius} Celsius
-    
-</div>
-
-)
-
-
+    return (
+        <div> 
+            {fahrenheit}°F é igual a {celsius}°C.
+        </div>
+    )
 }

@@ -1,14 +1,23 @@
-export default function Exercicio4()
+export default function Exercicio4({tipo, base, altura})
 {
+    let area = 0
+   if(tipo === "triangulo")
+    {
+        area = Number(base) * Number(altura) /2;
+    }
 
-return (
+    else if(tipo === "retangulo")
+    {
+        area = Number(base) * Number(altura)
 
-<div>
-
+    }
+    else{
+        area = 0;
+     }
     
-</div>
-
-)
-
-
+    return(
+    <div>
+      Poligono {tipo} de base {base} e altura {altura} possui a Área = {area}
+    </div>)
+    
 }
